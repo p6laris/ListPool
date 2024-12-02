@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <Authors>Fausto David Suarez Rosario</Authors>
@@ -13,24 +12,24 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageVersion>0.1.0</PackageVersion>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
     <Copyright>Copyright © Fausto David Suarez Rosario 2020</Copyright>
     <PackageProjectUrl>https://github.com/faustodavid/ListPool</PackageProjectUrl>
   </PropertyGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\ListPool\ListPool.csproj"/>
+    <ProjectReference Include="..\ListPool\ListPool.csproj" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="4.7.0"/>
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="..\..\LICENSE">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>
+      </PackagePath>
     </None>
   </ItemGroup>
-
 </Project>

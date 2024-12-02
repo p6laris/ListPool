@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <Authors>Fausto David Suarez Rosario</Authors>
@@ -20,21 +19,20 @@
     <Copyright>Copyright © Fausto David Suarez Rosario 2020</Copyright>
     <PackageProjectUrl>https://github.com/faustodavid/ListPool</PackageProjectUrl>
   </PropertyGroup>
-
   <ItemGroup>
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
     <PackageReference Include="Utf8Json" Version="1.3.7" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="..\..\LICENSE">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>
+      </PackagePath>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\ListPool.Serializers.Utf8Json.Formatters\ListPool.Serializers.Utf8Json.Formatters.csproj" />
     <ProjectReference Include="..\ListPool\ListPool.csproj" />
   </ItemGroup>
-
 </Project>
